@@ -1,0 +1,16 @@
+name: Scan Keamanan Otomatis
+on: [push] # Setiap kamu upload kode, ini jalan
+
+jobs:
+  deteksi-password:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ambil Kode dari Repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Cek Kebocoran Password (Gitleaks)
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
