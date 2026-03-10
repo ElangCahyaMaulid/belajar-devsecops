@@ -1,3 +1,2 @@
-// Simulasi kesalahan fatal
-const key_rahasia = "AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE"; 
-console.log("Cek keamanan...");
+// JANGAN PERNAH LAKUKAN INI DI DUNIA NYATA
+const AWS_SECRET_KEY = "AKIAIMORERAHASIA1234567890EXAMPLEKEY";
