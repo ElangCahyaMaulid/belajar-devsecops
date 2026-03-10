@@ -1,9 +1,10 @@
-// Simulasi Database Connection
+// Sekarang kode kamu BERSIH. Tidak ada password tertulis di sini.
 const db_config = {
     host: "localhost",
     user: "admin",
-    password: "SUPER_SECRET_PASSWORD_123!", 
-    api_key: "SG.x7890123456789012345678901234567890" // Pola SendGrid Key
+    // Kita panggil dari Environment Variable (Rahasia)
+    password: process.env.DB_PASSWORD, 
+    api_key: process.env.API_KEY_SENDGRID 
 };
 
-console.log("Mencoba koneksi ke database...");
+console.log("Mencoba koneksi ke database dengan cara yang AMAN...");
